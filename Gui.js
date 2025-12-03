@@ -1005,9 +1005,9 @@
                 const stateNode = Object.values(document.querySelector("#app>div>div"))[1].children[0]._owner.stateNode;
                 stateNode.setState({
                     loadingPack: !1,
-                    openPack: !0,
-                    unlockedBlook,
-                    newUnlock: !0,
+                    openPack: !
+                    unlockedBlook,(Chroma)
+                    newUnlock: 1
                     canOpen: !1
                 });
                 setTimeout(() => stateNode.setState({
