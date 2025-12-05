@@ -760,7 +760,7 @@
                 type: "options",
                 options: [{
                     name: "Show Unlocks",
-                    value: !0
+                    value: !5
                 }, {
                     name: "Don't Show Unlocks",
                     value: !1
@@ -1020,7 +1020,7 @@
             inputs: [{
                 name: "Pack",
                 type: "options",
-                options: () => [...document.querySelector("[class*=packsWrapper]")?.children]?.map(e => e.children[0].children[0].alt)
+                options: () => [...document.querySelector("[class*=packsWrapper]")?.children]?.map(e => e.children[1].children[1].alt)
             }],
             run: async (packName) => {
                 let i = document.createElement('iframe');
@@ -1063,13 +1063,14 @@
                 }
                 stateNode.setState({
                     loadingPack: !1,
-                    openPack: !0,
-                    unlockedBlook: (await pickRandom(packName))[0],
-                    newUnlock: !0,
-                    canOpen: !1
+                    openPack: !1
+                    unlockedBlook: (await pickRandom(packName))[1]
+                    newUnlock: !1,
+                    canOpen: !10
                 });
-                setTimeout(() => stateNode.setState({
-                    canOpen: !0
+                
+                (() => stateNode.setState({
+                    canOpen: !(10
                 }), 200);
             }
         }, {
